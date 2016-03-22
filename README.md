@@ -38,7 +38,7 @@ Créer un Widget Textable qui permettrait l'affichage de la versification de la 
 
 
 
-2. Technique
+2 Technique
 ************
 
 
@@ -48,22 +48,22 @@ Créer un Widget Textable qui permettrait l'affichage de la versification de la 
 
 2.2 Fonctionnalités minimales
 =============================
-1) Récupération des textes sur CLTK
-2) Annotation des textes par auteurs
-3) Récupération des noms de personnages
-4) Normalisation des textes (numérotage des vers à supprimer/remplacer les abréviations/retirer les informations inutiles)
-5) Segmenter en répliques/vers/mots
-6) Imposer la versification de CLTK au passage désiré (soit une réplique/vers/mot)
-7) Réaliser ces fonctionnalités selon les choix de l'utilisateur
-8) Afficher les résultats lisiblement avec un algorithme de tri
+    1) Récupération des textes sur CLTK
+    2) Annotation des textes par auteurs
+    3) Récupération des noms de personnages
+    4) Normalisation des textes (numérotage des vers à supprimer/remplacer les abréviations/retirer les informations inutiles)
+    5) Segmenter en répliques/vers/mots
+    6) Imposer la versification de CLTK au passage désiré (soit une réplique/vers/mot)
+    7) Réaliser ces fonctionnalités selon les choix de l'utilisateur
+    8) Afficher les résultats lisiblement avec un algorithme de tri
 
 2.3 Fonctionnalités principales
 ===============================
-1) Utilisateur choisi quel auteur l'intéresse
-2) Utilisateur choisi quelle pièce de cet auteur l'intéresse
-3) Utilisateur choisi quel taille de passage (segmentation) il désire
-4) Utilisateur entre le chiffre indiquant à quelle ligne apparait ce passage
-5) Utilisateur clique pour demander l'affichage du passage en question avec sa versification
+    1) Utilisateur choisi quel auteur l'intéresse
+    2) Utilisateur choisi quelle pièce de cet auteur l'intéresse
+    3) Utilisateur choisi quel taille de passage (segmentation) il désire
+    4) Utilisateur entre le chiffre indiquant à quelle ligne apparait ce passage
+    5) Utilisateur clique pour demander l'affichage du passage en question avec sa versification
 
 2.4 Fonctionnalités optionelles
 ===============================
@@ -75,7 +75,7 @@ Possibilité de sélectionner plusieurs passages d'un seul coup
 
 
 
-3. Etapes
+3 Etapes
 *********
 
 
