@@ -52,7 +52,7 @@ Dernière version en python 2 disponible
     2) Annotation des textes par auteurs
     3) Récupération des noms de personnages
     4) Normalisation des textes (numérotage des vers à supprimer/remplacer les abréviations/retirer les informations inutiles)
-    5) Segmenter en répliques/vers/mots
+    5) Segmenter en répliques/vers
     6) Imposer la versification de CLTK au passage désiré (soit une réplique/vers/mot)
     7) Réaliser ces fonctionnalités selon les choix de l'utilisateur
     8) Afficher les résultats lisiblement avec un algorithme de tri
