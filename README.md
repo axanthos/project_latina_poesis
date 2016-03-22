@@ -12,9 +12,9 @@ Specification: Widget Textable Latina Poesis
 
 1.1 But du projet
 =================
-Créer un Widget Textable qui permettrait l'affichage de la versification de la poésie latine, à partir du CLTK[#]_ ...
+Créer un Widget Textable qui permettrait l'affichage de la versification de la poésie latine, à partir du CLTK
 
-.. [#] Dernière version en python 2 disponible
+Dernière version en python 2 disponible
 
 
 1.2 Aperçu des étapes
