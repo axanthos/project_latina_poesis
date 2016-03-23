@@ -50,12 +50,11 @@ Dernière version en python 2 disponible
 =============================
     1) Récupération des textes sur CLTK
     2) Annotation des textes par auteurs
-    3) Récupération des noms de personnages
-    4) Normalisation des textes (numérotage des vers à supprimer/remplacer les abréviations/retirer les informations inutiles)
-    5) Segmenter en répliques/vers
-    6) Imposer la versification de CLTK au passage désiré (soit une réplique ou un vers)
-    7) Réaliser ces fonctionnalités selon les choix de l'utilisateur
-    8) Afficher les résultats lisiblement avec un algorithme de tri
+    3) Normalisation des textes
+    4) Segmenter en répliques/vers
+    5) Imposer la versification de CLTK au passage désiré (soit une réplique ou un vers)
+    6) Réaliser ces fonctionnalités selon les choix de l'utilisateur
+    7) Afficher les résultats lisiblement avec un algorithme de tri
 
 2.3 Fonctionnalités principales
 ===============================
@@ -72,7 +71,15 @@ Possibilité de sélectionner plusieurs passages d'un seul coup
 
 2.5 Tests
 =========
-
+    Les Auteurs sont sélectables
+    Les Pièces sont sélectables
+    L'Indexation des lignes fonctionne
+    Les Segmentations fonctionnent
+    Le programme réagit à une erreur dans la ligne donnée
+    Le programme réagit à une valeur NULL dans la segmentation output
+    L'outil de versification de CLTK est intégré au programme et fonctionnel
+    L'affichage fonctionne
+    L'affichage est organisable
 
 
 3 Etapes
