@@ -91,7 +91,7 @@ Possibilité de sélectionner plusieurs passages d'un seul coup
 =================
 * L'interface graphique est complétement construite.
 * Les fonctionnalités minimales sont prises en charge par le logiciel.
-
+* La documentation de base est intégrée
 
 
 3.2 Remise et présentation
