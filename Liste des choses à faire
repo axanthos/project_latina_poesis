@@ -1,0 +1,8 @@
+Liste des choses à faire:
+
+A) Dans OWLatina_poesis.py 
+
+1)Trouver comment importer le fichier scanner et tous ses composants
+2)Trouver comment créer les boutons radio avec le problème du value
+3)Créer l'input pour le nom de la segmentation en output
+4)Tester le code
