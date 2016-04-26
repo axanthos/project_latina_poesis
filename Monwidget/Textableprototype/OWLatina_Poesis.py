@@ -1,5 +1,5 @@
 """<name>Latina_Poesis</name>
-<description>Versifies a Latin text with the CLTK</description>
+<description>Select a Latin text from thelatinlibrary.com</description>
 <icon>Latina_Poesis.svg</icon>
 <priority>10</priority>"""
 
@@ -114,20 +114,20 @@ class OWLatina_Poesis(OWWidget):
             
         #)
         #line number
-        OWGUI.spin(
-            self.optionsBox,
-            self,
-            'linenumber',
-            min=1,
-            max=2,
-            step=1,
-            label='Line number',
-            callback=[
-                self.selection,
-                self.checkCommit,
-                self.sendButton.settingsChanged
-            ]
-        )
+        #OWGUI.spin(
+        #    self.optionsBox,
+        #    self,
+        #    'linenumber',
+        #    min=1,
+        #    max=2,
+        #    step=1,
+        #    label='Line number',
+        #    callback=[
+        #        self.selection,
+        #        self.checkCommit,
+        #        self.sendButton.settingsChanged
+        #    ]
+        #)
         #output name
         #OWGUI.
         #button apply choices
