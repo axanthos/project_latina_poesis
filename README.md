@@ -12,7 +12,7 @@ Specification: Widget Textable Latina Poesis
 
 1.1 But du projet
 =================
-Créer un Widget Textable qui permettrait l'affichage de la versification de la poésie latine, à partir du CLTK
+Créer un Widget Textable qui permettrait de sélectionner les textes à partir de thelatinlibrary.com
 
 Dernière version en python 2 disponible
 
@@ -48,21 +48,17 @@ Dernière version en python 2 disponible
 
 2.2 Fonctionnalités minimales
 =============================
-    1) Récupération des textes sur CLTK
+    1) Récupération des textes sur thelatinlibrary.com
     2) Annotation des textes par auteurs
     3) Normalisation des textes
     4) Segmenter en répliques/vers
-    5) Imposer la versification de CLTK au passage désiré (soit une réplique ou un vers)
-    6) Réaliser ces fonctionnalités selon les choix de l'utilisateur
-    7) Afficher les résultats lisiblement avec un algorithme de tri
+    5) Réaliser ces fonctionnalités selon les choix de l'utilisateur
 
 2.3 Fonctionnalités principales
 ===============================
     1) Utilisateur choisi quel auteur l'intéresse
     2) Utilisateur choisi quelle pièce de cet auteur l'intéresse
     3) Utilisateur choisi quel taille de passage (segmentation) il désire
-    4) Utilisateur entre le chiffre indiquant à quelle ligne apparait ce passage
-    5) Utilisateur clique pour demander l'affichage du passage en question avec sa versification
 
 2.4 Fonctionnalités optionelles
 ===============================
@@ -75,9 +71,7 @@ Possibilité de sélectionner plusieurs passages d'un seul coup
     Les Pièces sont sélectables
     L'Indexation des lignes fonctionne
     Les Segmentations fonctionnent
-    Le programme réagit à une erreur dans la ligne donnée
     Le programme réagit à une valeur NULL dans la segmentation output
-    L'outil de versification de CLTK est intégré au programme et fonctionnel
     L'affichage fonctionne
     L'affichage est organisable
 
