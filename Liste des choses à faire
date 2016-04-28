@@ -3,9 +3,11 @@ Liste des choses à faire:
 A) Dans OWLatina_poesis.py 
 
 Fonctionnalités:
-1)Trouver comment importer les textes thelatinlibrary.com
+1)Trouver comment supprimer certains URL de thelatinlibrary.com
+2)Recup noms et url des textes
+3)Afficher la liste des Textes
 2)Tester le code
 Interface:
-1)Trouver comment créer les boutons radio avec le problème du value
-2)Créer l'input pour le nom de la segmentation en output
+1)Relier le clic de l'auteur à l'updateTitleList function
+2)Créer les portion conventionnels des widgets
 3)Tester le code
