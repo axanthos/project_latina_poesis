@@ -3,10 +3,7 @@ Liste des choses à faire:
 A) Dans OWLatinText.py 
 
 Fonctionnalités:
-1)Trouver comment supprimer certains URL de thelatinlibrary.com
-2)Recup noms et url des textes
-3)Afficher la liste des Textes
-2)Tester le code
+1)Aller chercher les pages de l'auteur sélectionné uniquement
 Interface:
 1)Relier le clic de l'auteur à l'updateTitleList function
 2)Créer les portion conventionnels des widgets
