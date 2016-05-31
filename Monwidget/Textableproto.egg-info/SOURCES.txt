@@ -1,8 +1,0 @@
-setup.py
-Textableproto.egg-info/PKG-INFO
-Textableproto.egg-info/SOURCES.txt
-Textableproto.egg-info/dependency_links.txt
-Textableproto.egg-info/entry_points.txt
-Textableproto.egg-info/top_level.txt
-Textableprototype/OWDataSamplerA.py
-Textableprototype/__init__.py
