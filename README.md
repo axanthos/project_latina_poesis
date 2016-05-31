@@ -1,4 +1,4 @@
-# project_latina_poesis
+# project_latin_text
 Widget Textable which get the CLTK versification tool and apply it to texts segments
 ##################################
 Specification: Widget Textable Latin Text
