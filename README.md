@@ -1,7 +1,7 @@
 # project_latina_poesis
 Widget Textable which get the CLTK versification tool and apply it to texts segments
 ##################################
-Specification: Widget Textable Latina Poesis
+Specification: Widget Textable Latin Text
 ##################################
 
 
@@ -50,19 +50,16 @@ Dernière version en python 2 disponible
 =============================
     1) Récupération des textes sur thelatinlibrary.com
     2) Annotation des textes par auteurs
-    3) Normalisation des textes
-    4) Segmenter en répliques/vers
-    5) Réaliser ces fonctionnalités selon les choix de l'utilisateur
+    3) Selection de l'auteur affiche ses pièces
 
 2.3 Fonctionnalités principales
 ===============================
     1) Utilisateur choisi quel auteur l'intéresse
     2) Utilisateur choisi quelle pièce de cet auteur l'intéresse
-    3) Utilisateur choisi quel taille de passage (segmentation) il désire
 
-2.4 Fonctionnalités optionelles
+2.4 Fonctionnalités optionnelles
 ===============================
-Possibilité de sélectionner plusieurs passages d'un seul coup
+Possibilité de sélectionner plusieurs textes d'un seul coup
 
 
 2.5 Tests
@@ -70,7 +67,6 @@ Possibilité de sélectionner plusieurs passages d'un seul coup
     Les Auteurs sont sélectables
     Les Pièces sont sélectables
     L'Indexation des lignes fonctionne
-    Les Segmentations fonctionnent
     Le programme réagit à une valeur NULL dans la segmentation output
     L'affichage fonctionne
     L'affichage est organisable
