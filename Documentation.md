@@ -14,7 +14,7 @@ It gives the user the opportunity to work, in Orange Textable, with the pieces o
 
 3. Which way does it work?
 =================
-It searches for every author on the website, and not only those visibles on the welcoming page. For each author, it searches every piece of work and gives them an annotation by author. Even if it's complicated by the state of The Latin Library website, that isn't the most regularly built website, the OWLatinTest.py program found a way to gather every informations it needed. When all this informations are placed in an array, they can be used in the widget. That's the cause why the widget installation will take some time.
+It searches for every author on the website, and not only those visibles on the welcoming page. For each author, it searches every piece of work and gives them an annotation by author. Even if it's complicated by the state of The Latin Library website, that isn't the most regularly built website, the OWLatinTest.py program found a way to gather every informations it needed. When all this informations are placed in an array, they can be used in the widget. That's the cause why the widget installation will take some time. We even had the problem that the website does have a limit to the number of connections availables in a limited time. So if your widget doesn't work, try reinstalling it: maybe you didn't well connected to the website at first.
 
 4. How does it appears?
 =================
