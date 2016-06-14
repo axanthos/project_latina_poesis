@@ -22,4 +22,4 @@ The interface is voluntarily easy-to-read. There is the less informations possib
 
 5. Project
 =================
-This project was built all alone by Julien Andenmatten. It was proposed as a project for one semester in Mr. Aris Xanthos class. The results aren't as well finished as they could but they does open a way to the next step of a completely workable proto-widget.
+This project was built all alone by Julien Andenmatten. It was proposed as a project for one semester in Mr. Aris Xanthos class. The results aren't as well finished as they could but they do open a way for the next step to a completely workable proto-widget.
