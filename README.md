@@ -44,7 +44,7 @@ Dernière version en python 2 disponible
 
 2.1 Mock-up de l'interface
 ==========================
-![Mockup](https://cloud.githubusercontent.com/assets/17759898/16052299/e7218062-3263-11e6-9731-d313a055618d.png)
+![Mockup](https://cloud.githubusercontent.com/assets/17759898/16052528/dfa3aa26-3264-11e6-97c0-c79d45a04407.png)
 
 2.2 Fonctionnalités minimales
 =============================
