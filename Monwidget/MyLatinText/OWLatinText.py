@@ -83,9 +83,9 @@ class OWLatinText(OWWidget):
             infoBoxAttribute=u'infoBox',
             sendIfPreCallback=self.updateGUI,
         )
-		# Les etapes de recuperation suivantes sont inutiles desormais grace au OWLatinTest.py
+	# Les etapes de recuperation suivantes sont inutiles desormais grace au OWLatinTest.py
         # Elles peuvent etre sorties des commentaires pour avoir une meilleure visualisation du rendu final du widget mais ne le rende pas reactif
-		# Cette partie doit a present etre remplacee par un appel a la liste des auteurs creee dans OWLatinTest.py
+	# Cette partie doit a present etre remplacee par un appel a la liste des auteurs creee dans OWLatinTest.py
         
         # #2)Recuperer la mainpage du site à la création du widget
 
@@ -179,22 +179,21 @@ class OWLatinText(OWWidget):
         
     def getPieces (self):
         
-		# Celles-ci aussi / il faudra remplir cette fonction avec un appel au tableau final par les occurences de la valeur de l auteur selectionne
-        
-		# if self.auteur is not None:
-            # urlValue = urls[len(self.auteur)]
-            
-            # linktextspage = list()
-            # oeuvresTitle = list()
-            # #Recuperer les pages html de chaque oeuvre
-            # f2 = urllib2.urlopen(urlValue)
-            # pageoeuvres = f2.read()
-            # # print pageoeuvres
-            
-            # regex = r"(?<=<h2 class=\"work\">)(.+?)(?=</h2>)"
-            # match5 = re.findall(regex, pageoeuvres, re.IGNORECASE) 
-            # for matchE in match5:
-                
+	# Celles-ci aussi / il faudra remplir cette fonction avec un appel au tableau final par les occurences de la valeur de l auteur selectionne
+
+	# if self.auteur is not None:
+	    # urlValue = urls[len(self.auteur)]
+	    
+	    # linktextspage = list()
+	    # oeuvresTitle = list()
+	    # #Recuperer les pages html de chaque oeuvre
+	    # f2 = urllib2.urlopen(urlValue)
+	    # pageoeuvres = f2.read()
+	    # # print pageoeuvres
+	    
+	    # regex = r"(?<=<h2 class=\"work\">)(.+?)(?=</h2>)"
+	    # match5 = re.findall(regex, pageoeuvres, re.IGNORECASE) 
+	    # for matchE in match5:
                 # nomdeloeuvre = "%s" % (matchE)
                 # oeuvresTitle.append(nomdeloeuvre)
 
@@ -208,11 +207,7 @@ class OWLatinText(OWWidget):
                     # listederoulanteoeuvres = (match2)
                     # linktextspage.append(listederoulanteoeuvres)
                     # # print "%s" % (match2)   
-            # else:
-
-                # print "The regex pattern does not match"
-
-                    
+            
             # # retirer les liens inutiles de la liste 
             # i = 'href="misc.html">The Miscellany'
             # j = 'href="index.html">The Latin Library'
@@ -247,7 +242,7 @@ class OWLatinText(OWWidget):
             # # print oeuvresTitle
             # # print oeuvresTitleName
             # # print oeuvresURL
-
+	pass
     def sendData(self):
         pass
         
