@@ -49,49 +49,53 @@ class OWLatinText(OWWidget):
         # Definition des chaines d entree et de sortie...
         self.inputs = []
         self.outputs = [("LatinTextData", Segmentation)]
+        
+        # Les etapes de recuperation suivantes sont inutiles desormais grace au OWLatinTest.py
+        # Elles peuvent etre sorties des commentaires pour avoir une meilleure visualisation du rendu final du widget mais ne le rende pas reactif
+        # Cette partie doit etre remplacee par un appel a la liste des auteurs creee dans OWLatinTest.py
+        
+        # #1)Recuperer la mainpage du site
 
-        #1)Recuperer la mainpage du site
+        # link = "http://www.thelatinlibrary.com"
+        # f = urllib2.urlopen(link)
+        # mainpage = f.read()
+        # #print mainpage
 
-        link = "http://www.thelatinlibrary.com"
-        f = urllib2.urlopen(link)
-        mainpage = f.read()
-        #print mainpage
+        # #2)Sur la mainpage, recuperer la liste deroulante des auteurs avec leurs liens
 
-        #2)Sur la mainpage, recuperer la liste deroulante des auteurs avec leurs liens
+        # regex = r"<form name=myform>(.+ ?)"
 
-        regex = r"<form name=myform>(.+ ?)"
+        # if re.search(regex, mainpage):
+           # match1 = re.search(regex, mainpage)
+           # #print "%s" % (match1.group(0))
+           # listederoulante = (match1.group(0))
 
-        if re.search(regex, mainpage):
-           match1 = re.search(regex, mainpage)
-           #print "%s" % (match1.group(0))
-           listederoulante = (match1.group(0))
+        # else:
+            # print "The regex pattern does not match."
 
-        else:
-            print "The regex pattern does not match."
-
-        #3)Dans la liste deroulante, recuperer les liens des pages des auteurs
+        # #3)Dans la liste deroulante, recuperer les liens des pages des auteurs
             
-        regex = r"(?<=value=)(.+?)(?=>)"
-        matches = re.findall(regex, listederoulante)
-        #supprimer la derniere ligne en xml
-        #normaliser les noms de pages en supprimant les guillemets
-        #rajouter le nom de domaine pour que les urls soit complet
-        urls = list()
-        for matchA in matches[:-1]:
-            matchA = re.sub('"','',matchA)
-            linkauthorpage = "http://www.thelatinlibrary.com/%s" % (matchA)
-            urls.append(linkauthorpage)
+        # regex = r"(?<=value=)(.+?)(?=>)"
+        # matches = re.findall(regex, listederoulante)
+        # #supprimer la derniere ligne en xml
+        # #normaliser les noms de pages en supprimant les guillemets
+        # #rajouter le nom de domaine pour que les urls soit complet
+        # urls = list()
+        # for matchA in matches[:-1]:
+            # matchA = re.sub('"','',matchA)
+            # linkauthorpage = "http://www.thelatinlibrary.com/%s" % (matchA)
+            # urls.append(linkauthorpage)
 
 
-        #4)Dans la liste deroulante, recuperer les noms des auteurs
+        # #4)Dans la liste deroulante, recuperer les noms des auteurs
 
-        regex = r"(?<=>)(.+?)(?=<option)"
-        matches2 = re.findall(regex, listederoulante)
-        #supprimer la première ligne en xml
-        auteurs = list()
-        for matchB in matches2[1:]:
-            nomdauteur = "%s" % (matchB) 
-            auteurs.append(nomdauteur)
+        # regex = r"(?<=>)(.+?)(?=<option)"
+        # matches2 = re.findall(regex, listederoulante)
+        # #supprimer la première ligne en xml
+        # auteurs = list()
+        # for matchB in matches2[1:]:
+            # nomdauteur = "%s" % (matchB) 
+            # auteurs.append(nomdauteur)
 
         
         #5)Creation des differents modules du widget
@@ -142,61 +146,64 @@ class OWLatinText(OWWidget):
         self.resize(100,50)
 
     def sendData(self):
-        linktextspage = list()
-        #Recuperer les pages html de chaque oeuvre
-        for value in urls:
-            f2 = urllib2.urlopen(value)
-            pageoeuvres = f2.read()
-            #print pageoeuvres
+        
+        # Celles-ci aussi / il faudra remplir cette fonction avec un appel au tableau final par les occurences de la valeur de l auteur selectionne
+        
+        # linktextspage = list()
+        # #Recuperer les pages html de chaque oeuvre
+        # for value in urls:
+            # f2 = urllib2.urlopen(value)
+            # pageoeuvres = f2.read()
+            # #print pageoeuvres
 
-            oeuvresTitle = list()
-            oeuvresURL = list()
+            # oeuvresTitle = list()
+            # oeuvresURL = list()
 
-            regex = r"(?<=<a )(.+?)(?=</a>)"
-            if re.findall(regex, pageoeuvres, re.IGNORECASE):       
-                for match2 in re.findall(regex, pageoeuvres, re.IGNORECASE):        
-                    listederoulanteoeuvres = (match2)       
-                    linktextspage.append(listederoulanteoeuvres)
-                    #print "%s" % (match2)    
+            # regex = r"(?<=<a )(.+?)(?=</a>)"
+            # if re.findall(regex, pageoeuvres, re.IGNORECASE):       
+                # for match2 in re.findall(regex, pageoeuvres, re.IGNORECASE):        
+                    # listederoulanteoeuvres = (match2)       
+                    # linktextspage.append(listederoulanteoeuvres)
+                    # #print "%s" % (match2)    
 
-            else:
+            # else:
             
-                print "The regex pattern does not match"
+                # print "The regex pattern does not match"
 
-            regex = r"(?<=<h2 class=\"work\">)(.+?)(?=</h2>)"
-            if re.findall(regex, pageoeuvres, re.IGNORECASE):
-                for matchE in re.findall(regex, pageoeuvres, re.IGNORECASE):
-                    nomdeloeuvre = "%s" % (matchE)
-                    oeuvresTitle.append(nomdeloeuvre)
-                    # print nomdeloeuvre
-            else:   
+            # regex = r"(?<=<h2 class=\"work\">)(.+?)(?=</h2>)"
+            # if re.findall(regex, pageoeuvres, re.IGNORECASE):
+                # for matchE in re.findall(regex, pageoeuvres, re.IGNORECASE):
+                    # nomdeloeuvre = "%s" % (matchE)
+                    # oeuvresTitle.append(nomdeloeuvre)
+                    # # print nomdeloeuvre
+            # else:   
 
-                regex = r"(?<=shtml\">)(.+?)(?=</a>)"
-                matches3 = re.findall(regex, listederoulanteoeuvres)
+                # regex = r"(?<=shtml\">)(.+?)(?=</a>)"
+                # matches3 = re.findall(regex, listederoulanteoeuvres)
                 
-                for matchC in matches3:
-                    nomduTexte = "%s" % (matchC)
-                    oeuvresTitle.extend(nomduTexte)
+                # for matchC in matches3:
+                    # nomduTexte = "%s" % (matchC)
+                    # oeuvresTitle.extend(nomduTexte)
                     
                 
-                regex = r"(?<=href=\")(.+?)(?=\">)"
-                matches4 = re.findall(regex, listederoulanteoeuvres)
+                # regex = r"(?<=href=\")(.+?)(?=\">)"
+                # matches4 = re.findall(regex, listederoulanteoeuvres)
                 
-                for matchD in matches4[:-3]:
-                    urlTexte = "%s" % (matchD)
-                    oeuvresURL.extend(urlTexte)
+                # for matchD in matches4[:-3]:
+                    # urlTexte = "%s" % (matchD)
+                    # oeuvresURL.extend(urlTexte)
                     
-        # retirer les liens inutiles de la liste 
-        i = 'href="misc.html">The Miscellany'
-        j = 'href="index.html">The Latin Library'
-        k = 'href="/index.html">The Latin Library'
-        l = 'href="classics.html">The Classics Page'
+        # # retirer les liens inutiles de la liste 
+        # i = 'href="misc.html">The Miscellany'
+        # j = 'href="index.html">The Latin Library'
+        # k = 'href="/index.html">The Latin Library'
+        # l = 'href="classics.html">The Classics Page'
 
 
-        result0 = filter(lambda a: a != i, linktextspage)
-        result1 = filter(lambda a: a != j, result0)
-        result2 = filter(lambda a: a != k, result1)
-        result3 = filter(lambda a: a != l, result2)        
+        # result0 = filter(lambda a: a != i, linktextspage)
+        # result1 = filter(lambda a: a != j, result0)
+        # result2 = filter(lambda a: a != k, result1)
+        # result3 = filter(lambda a: a != l, result2)        
 
     def updateGUI(self):
         pass
