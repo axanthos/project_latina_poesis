@@ -211,23 +211,6 @@ class OWLatinText(OWWidget):
     def commit(self):
         pass
 
-    # def recupererAuteurSelect(auteur, tuples_url_auteurs):
-    #     if self.auteur is not None:
-    #         self.piece.clear()
-    #         self.piece.addItem(u'(all)')
-    #         for piece in self.piece[self.auteur]:
-    #             self.piece.addItem(piece)
-    # recupererAuteurSelect()
-
-    # def ouvreUrlOeuvres(urls):
-        # for auteur in enumerate(auteurs):
-            # file_name = "%s" % 
-            # response = urllib2.urlopen(url)
-            # with open(file_name, 'wb') as out_file:
-                # shutil.copyfileobj(response, out_file)
-
-# fetch_urls(urls)
-
 #Controleur sur cmd
     
 if __name__ == '__main__':
